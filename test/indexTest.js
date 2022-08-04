@@ -78,3 +78,38 @@ describe('index.js', function () {
   });
 });
 
+ var kittens = [] //define your array here
+ var kittens = ['Milo','Otis', 'Garfield']
+
+ function destructivelyAppendKitten(name) {
+  kitetens.push(name);
+  return kittens;
+ }
+ function destructivelyPrependKitten(name){
+  kittens.unshift(name);
+  return kittens;
+ }
+ function destructivelyRemoveLastKitten(name){
+  kittens.pop();
+  return kittens
+ }
+ function destructivelyRemoveFirstKitten(name){
+  kittens.shift();
+  return kittens
+ }
+ function appendKitten(name){
+  var name_1= [...kittens,name]
+  return name_1
+ }
+ function prependKitten(name){
+  var name_2=[name, ...kittens];
+  return name_2
+ }
+ function removeLastKitten(){
+  var caats= kittens.slice(0,kittens.lenth-1)
+  return caats;
+ }
+ function removeFirstCat(){
+  var catts= kittens.slice(1)
+  return catts
+ }

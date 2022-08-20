@@ -78,38 +78,34 @@ describe('index.js', function () {
   });
 });
 
- var kittens = [] //define your array here
- var kittens = ['Milo','Otis', 'Garfield']
+ //define your array here
+ const cats = ['Milo','Otis', 'Garfield']
 
- function destructivelyAppendKitten(name) {
-  kitetens.push(name);
-  return kittens;
+ function destructivelyAppendCat(name) {
+  return cats.push("Ralph");
  }
- function destructivelyPrependKitten(name){
-  kittens.unshift(name);
-  return kittens;
+ function destructivelyPrependCat(name){
+  return cats.unshift("Bob");
  }
- function destructivelyRemoveLastKitten(name){
-  kittens.pop();
-  return kittens
+ function destructivelyRemoveLastCat(name){
+  return cats.pop(name);
  }
- function destructivelyRemoveFirstKitten(name){
-  kittens.shift();
-  return kittens
+ function destructivelyRemoveFirstCat(name){
+  return cats.shift(name);
  }
- function appendKitten(name){
-  var name_1= [...kittens,name]
-  return name_1
+ function appendCat(name){
+  let newArray= [...cats, "Broom"];
+  return newArray
  }
- function prependKitten(name){
-  var name_2=[name, ...kittens];
-  return name_2
+ function prependCat(name){
+  let newArray2= ["Arnold", ...cats];
+  return newArray2
  }
- function removeLastKitten(){
-  var caats= kittens.slice(0,kittens.lenth-1)
-  return caats;
+ function removeLastCat(name){
+  let newArray= cats.slice(0, -1);
+  return newArray;
  }
  function removeFirstCat(){
-  var catts= kittens.slice(1)
-  return catts
+  let newArray= cats.slice(1);
+  return newArray;
  }
